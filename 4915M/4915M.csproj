@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FF21FA0-CE76-4018-8C5C-B6D1E136175A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_4915M</RootNamespace>
+    <AssemblyName>4915M</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Function.Designer.cs">
+      <DependentUpon>Admin Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeStock.Designer.cs">
+      <DependentUpon>ChangeStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DealerAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DealerAdmin.Designer.cs">
+      <DependentUpon>DealerAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery.Designer.cs">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrder.Designer.cs">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodRec.Designer.cs">
+      <DependentUpon>GoodRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickParts.Designer.cs">
+      <DependentUpon>PickParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order.Designer.cs">
+      <DependentUpon>Purchase Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReorderLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReorderLevel.Designer.cs">
+      <DependentUpon>ReorderLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveStock.Designer.cs">
+      <DependentUpon>SaveStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDealer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDealer.Designer.cs">
+      <DependentUpon>SearchDealer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerachOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerachOrder.Designer.cs">
+      <DependentUpon>SerachOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="slmcDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slmcDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockInformationFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockInformationFrom.Designer.cs">
+      <DependentUpon>StockInformationFrom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Function.resx">
+      <DependentUpon>Admin Function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeStock.resx">
+      <DependentUpon>ChangeStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DealerAdmin.resx">
+      <DependentUpon>DealerAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery.resx">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrder.resx">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodRec.resx">
+      <DependentUpon>GoodRec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickParts.resx">
+      <DependentUpon>PickParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase Order.resx">
+      <DependentUpon>Purchase Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReorderLevel.resx">
+      <DependentUpon>ReorderLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveStock.resx">
+      <DependentUpon>SaveStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDealer.resx">
+      <DependentUpon>SearchDealer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerachOrder.resx">
+      <DependentUpon>SerachOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockInformationFrom.resx">
+      <DependentUpon>StockInformationFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="slmcDataSet.xsc">
+      <DependentUpon>slmcDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="slmcDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slmcDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slmcDataSet.xss">
+      <DependentUpon>slmcDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="18cc6bffb17cac19048d01b6ab05e088.png" />
+    <Content Include="2a6d3eb31bc730c75eac34d77ff0d40d.png" />
+    <Content Include="images.jpg" />
+    <None Include="Properties\images %282%29.jpg" />
+    <None Include="Properties\istockphoto-862601036-612x612.jpg" />
+    <None Include="Properties\images %281%29.jpg" />
+    <None Include="Properties\18cc6bffb17cac19048d01b6ab05e088.png" />
+    <None Include="Properties\2a6d3eb31bc730c75eac34d77ff0d40d.png" />
+    <None Include="Properties\images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
